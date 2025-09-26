@@ -1,5 +1,42 @@
 <body>
+<div class="wrapper">
+	<svg>
+		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+			Краснова Софья
+		</text>
+	</svg>
+</div>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 118px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #FFFFFF};
+
+
+</style> 
+<a href="https://skillbox.ru/media/design/chto_takoe_figma/?ysclid=mg0sg2rkwd149352873">figma</a>
 <h1>Сайт</h1>
  <h2>Список любимых дорам</h2>
 <ul>
@@ -9,4 +46,5 @@
     <li>Страшная воля богов</li>
 </ul>
 <img src="https://i.pinimg.com/736x/ad/c1/52/adc15272696c55bf690d21494df122ba.jpg">
+
 </body>
